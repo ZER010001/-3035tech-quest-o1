@@ -1,1 +1,29 @@
 
+package questao1;
+
+public class Questao1 {
+
+    public static void main(String[] args) {
+        
+        int n [] = {1,2,3,4,5,6,6};
+        int i=0;
+        int j=0;
+        int v=0;
+        
+        //colocquei o vetor em ordem primeiro
+        for(i=0; i<n.length; i++){
+
+            for (j=i; j<n.length; j++){
+
+                if (n[i] >= n[j]){
+
+                    v=n[i];
+                    n[i]=n[j];
+                    n[j]=v;
+                }
+            }
+        }
+        // depois apenas imprimi o penultimo numero do vetor
+        System.out.println("O segundo maior numero e: "+(n.length-1));
+    }
+}
