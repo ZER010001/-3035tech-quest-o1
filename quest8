@@ -1,0 +1,55 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package questao1;
+import java.util.Scanner;
+/**
+ *
+ * @author Sergio
+ */
+public class Questao1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+      Scanner entrada = new Scanner(System.in);
+      System.out.println("Digite o primeiro numero: ");
+      float n1 = entrada.nextFloat();
+      System.out.println("Digite o segundo numero: ");
+      float n2 = entrada.nextFloat();
+      float r;
+      System.out.println("Operação 1: A soma dos dois números\n" +
+                         "Operação 2: A subtração dos dois números\n" +
+                         "Operação 3: A multiplicação dos dois números\n" +
+                         "Operação 4: A divisão dos dois números");
+      int opcao = entrada.nextInt();
+       switch (opcao) {
+         case 1:
+           r = n1 + n2;
+           System.out.println("A soma dos número e: "+r);
+           break;
+         case 2:
+           r = n1 - n2;
+           System.out.println("A subtracao dos numeros e: "+r);
+           break;
+         case 3:
+           r = n1 * n2;
+           System.out.println("A multiplicacao dos numeros e: "+r);
+           break;
+         case 4:
+           r = n1 / n2;
+           System.out.println("A divisao dos numeros e: "+r);
+           break;
+         default:
+           System.out.println("A opção digita não e valida. \n Encerrando o programa...");
+       }
+      /*a) Operação 1: A soma de dois números
+        b) Operação 2: A subtração de dois números
+        c) Operação 3: A multiplicação de dois números
+        d) Operação 4: A divisão de dois números
+        Se a opção digitada for inválida, mostre uma mensagem de erro e termine a execução do programa.*/
+    }
+}
