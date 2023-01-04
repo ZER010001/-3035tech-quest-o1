@@ -5,7 +5,7 @@ public class Questao1 {
 
     public static void main(String[] args) {
         
-        int n [] = {1,2,3,4,5,6,6};
+        int n [] = {1,2,3,4,5,6,6,};
         int i=0;
         int j=0;
         int v=0;
@@ -23,7 +23,16 @@ public class Questao1 {
                 }
             }
         }
-        // depois apenas imprimi o penultimo numero do vetor
-        System.out.println("O segundo maior numero e: "+(n.length-1));
+        int sgmn = 0;
+        int x = 6;
+        int y = x-1;
+        while(sgmn == 0){
+            if(n[x] > n[y]){
+                sgmn = n[y];
+                break;
+            }
+        y--;                
+        }
+        System.out.println("O segundom maior numero e: "+sgmn);
     }
 }
