@@ -1,0 +1,38 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package questao1;
+import java.text.DecimalFormat;
+import java.util.Scanner;
+/**
+ *
+ * @author Sergio
+ */
+public class Questao1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        Scanner entrada = new Scanner(System.in);
+        double n;
+        
+        System.out.println("Digite o primeiro numero: ");
+        n = entrada.nextDouble();
+        
+        double a = n*0.05;
+        double b = n*0.5;
+        double c = n*1.5;
+        System.out.printf("O valor vezes 0.005 e 1 casa decimal = %.1f %n",  (a));
+        System.out.printf("O valor vezes 0.5 e 2 casa decimal = %.2f %n",  (a));
+        System.out.printf("O valor vezes 1.5 e 3 casa decimal = %.3f %n",  (a));
+        System.out.printf("O valor vezes 0.005 e 1 casa decimal = %.1f %n",  (b));
+        System.out.printf("O valor vezes 0.5 e 2 casa decimal = %.2f %n",  (b));
+        System.out.printf("O valor vezes 1.5 e 3 casa decimal = %.3f %n",  (b));
+        System.out.printf("O valor vezes 0.005 e 1 casa decimal = %.1f %n",  (c));
+        System.out.printf("O valor vezes 0.5 e 2 casa decimal = %.2f %n",  (c));
+        System.out.printf("O valor vezes 1.5 e 3 casa decimal = %.3f %n",  (c));
+    }
+}
